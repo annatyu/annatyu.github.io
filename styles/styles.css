@@ -3,7 +3,24 @@ h1
     display: block;
     text-decoration: dashed;
     text-transform: uppercase;
-    color:red;
+    color:rgb(0, 255, 13);
     text-align: center;
- 
+    
+}
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.page-title{
+    color: rgb(255, 0, 217);
+    font-size: 32px;
+}
+.element {
+    color: blue;
+}
+.element:hover{
+    color: red;
+}
+.element:active{
+    color: darkred;
 }
