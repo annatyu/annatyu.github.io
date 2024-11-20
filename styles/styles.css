@@ -1,58 +1,44 @@
-
-h1
-{
-    display: block;
-    text-decoration: dashed;
-    text-transform: uppercase;
-    color:rgb(0, 255, 13);
-    text-align: center;
-    
+html,
+body {
+  width: 100%; 
+  margin: 0;
+  padding: 0;
 }
-.title{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-}
-.page-title{
-    color: rgb(255, 0, 217);
-    font-size: 32px;
-}
-.element {
-    color: blue;
-}
-.element:hover{
-    color: red;
-}
-.element:active{
-    color: darkred;
-}
-
-.button {
-    width: 150px;
-    height: 50px;
-}
-
-.button-red {
-    background: red;
-    color: white;
-    border: 1px solid black;
-}
-
-.header .button {
-    width: 250px;
-}
-.container {
-    width: 250px;
-    height: 150px;
-    margin: 0 auto;
-    border-style: ridge;
-    border-color: black;
-    border-width: 20px;
-    background-color: lightblue;
+.body {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding-top: 147px;
   }
-  .child {
-    width: 60%;
-    height: auto;
+  .page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 147px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(222, 222, 222, 0.5);
+    backdrop-filter: blur(20px);
+    z-index: 100;
+  }
+  .page-header__container {
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1414px;
     margin: 0 auto;
-    background-color: lightcoral;
-    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  
+  .main {
+    flex: 1 0 auto;
+    background-color: coral;
+  }
+  .page-footer {
+    flex: 0 0 auto;
+    background-color: gray;
   }
