@@ -26,7 +26,8 @@ body {
   .page-header__container {
     box-sizing: border-box;
     display: flex;
-    align-items: center;
+    flex-direction: row;
+
     width: 100%;
     max-width: 1414px;
     margin: 0 auto;
